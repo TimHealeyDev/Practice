@@ -10,7 +10,7 @@ int main(){
 	getline(cin, s);
 	cout << endl;
 
-	cout << "Out: " << isUnique(s) << endl;
+	cout << "Out: " << isUniqueLessSpace(s) << endl;
 
 	return 0;
 }
