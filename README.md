@@ -5,13 +5,13 @@
 
 <details>
 	<summary>Coursework</summary>
-	<p> Placeholder </p>
+	<p> Placeholder (Coming soon) </p>
 </details>
 <details>
 	<summary>Problem Solving Questions</summary>
-	<p> Placeholder </p>
+	<p> Cracking the Coding Interview </p>
 </details>
 <details>
 	<summary>Algorithm Exploration</summary>
-	<p> Placeholder </p>
+	<p> Placeholder (Coming soon) </p>
 </details>
