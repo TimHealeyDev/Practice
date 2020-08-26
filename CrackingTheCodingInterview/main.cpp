@@ -1,5 +1,5 @@
 #include <iostream>
-#include "1-3_URLify.cpp"
+#include "1-4_PalindromePermutation.cpp"
 
 using namespace std;
 
@@ -10,11 +10,11 @@ int main(){
 	int i;
 	cout << "In 1: ";
 	getline(cin, s);
-	cout << "In 2: ";
-	getline(cin, c);
+	/*cout << "In 2: ";
+	getline(cin, c);*/
 	cout << endl;
 
-	cout << "Out: " << URLify("Mr John Smith   ",13) << endl;
+	cout << "Out: " << PalindromePermutation(s) << endl;
 
 	return 0;
 }
