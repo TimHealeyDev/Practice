@@ -1,18 +1,20 @@
 #include <iostream>
-#include "1-2_checkPermutation.cpp"
+#include "1-3_URLify.cpp"
 
 using namespace std;
 
 int main(){
 	
-	string s, s2;
+	string s;
+	string c;
+	int i;
 	cout << "In 1: ";
 	getline(cin, s);
 	cout << "In 2: ";
-	getline(cin, s2);
+	getline(cin, c);
 	cout << endl;
 
-	cout << "Out: " << checkPermutation(s,s2) << endl;
+	cout << "Out: " << URLify("Mr John Smith   ",13) << endl;
 
 	return 0;
 }
