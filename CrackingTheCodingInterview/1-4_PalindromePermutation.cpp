@@ -76,3 +76,5 @@ bool PalindromePermutation(string in){
 	- Instead of counting all character occurrences, use a bitarray and flip the bit each time we encounter the character
 	- The bitarray value will be 0 when encountered even number of times, 1 when encountered odd number of times.
 	- Using this we can check to make sure the sum of the bitarray is 0 for even character counts and 1 for odd character counts.
+
+*/
