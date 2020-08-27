@@ -1,5 +1,5 @@
 #include <iostream>
-#include "1-5_OneAway.cpp"
+#include "1-6_StringCompression.cpp"
 
 using namespace std;
 
@@ -10,11 +10,11 @@ int main(){
 	int i;
 	cout << "In 1: ";
 	getline(cin, s);
-	cout << "In 2: ";
-	getline(cin, c);
+	/*cout << "In 2: ";
+	getline(cin, c);*/
 	cout << endl;
 
-	cout << "Out: " << OneAway(s, c) << endl;
+	cout << "Out: " << StringCompression(s) << endl;
 
 	return 0;
 }
