@@ -1,21 +1,29 @@
 #include <iostream>
 #include <stdlib.h>
-#include "1-9_StringRotation.cpp"
+#include "2-1_RemoveDups.cpp"
 
 using namespace std;
 
 int main(){
 	
-	string s;
-	string c;
-	int i;
-	cout << "In 1: ";
-	getline(cin, s);
-	cout << "In 2: ";
-	getline(cin, c);
-	cout << endl;
+	LinkedList l = new LinkedList();
+	l.append(3);
+	l.append(2);
+	l.append(2);
+	l.append(7);
+	l.append(9);
+	l.append(3);
+	l.append(2);
+	l.append(7);
+	l.append(6);
 
-	cout << "isRotated: " << StringRotation(s, c) << endl;
+	cout << "Original:" << endl;
+	l.printList();
+
+	RemoveDups(n);
+
+	cout << "Dupes Removed:" << endl;
+	l.printList();
 
 	return 0;
 }

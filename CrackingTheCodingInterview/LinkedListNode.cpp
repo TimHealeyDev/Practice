@@ -1,22 +1,53 @@
+#include <iostream>
 
-class LinkedListNode {
-public:
-	LinkedListNode next;
+struct Node {
 	int data;
+	struct Node *next;
+};
 
-	LinkedListNode(int d){
-		data = d;
-		next = null;
+class LinkedList {
+private:
+
+	Node *head;
+	Node *tail;
+
+public:
+
+	LinkedList(){
+		head = NULL;
+		tail = NULL;
+	}
+
+	Node getHead(){
+		return *head;
 	}
 
 	void append(int d){
-		LinkedListNode end = new LinkedListNode(d);
-		LinkedListNode n = this;
 
-		while (n.next != NULL) {
-			n = n.next;
+		Node *end = new Node;
+		end->data = d;
+		end->next = NULL;
+
+		if (head == NULL){
+			head = end;
+			tail = end;
+		}
+		else{
+			tail->next = end;
+			tail = tail->next;
+		}
+	}
+
+	void printList(){
+		Node *temp = new Node;
+		temp = head;
+
+		while (temp){
+			std::cout << temp->data << ", ";
+			temp = temp->next;
 		}
 
-		n.next = end;
+		std::cout << std::endl;
+		return;
 	}
-}
+};
